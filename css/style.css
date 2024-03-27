@@ -17,21 +17,21 @@
 
 /************* FOOTER *************/
 
-/************* MEDIA QUERY SCHERMO *************/
-/************* DESKTOP *************/
-@media screen and (max-width: ) {
+/************* MEDIA QUERY DESKTOP-FIRST *************/
+/************* md SCREEN *************/
+@media screen and (max-width: 992px) {
     body {
         background-color: red;
     }
 }
-/************* TABLET *************/
-@media screen and (max-width: ) {
+/************* s SCREEN *************/
+@media screen and (max-width: 768px) {
     body {
         background-color: orange;
     }
 }
-/************* SMARTPHONE *************/
-@media screen and (max-width: ) {
+/************* xs SCREEN *************/
+@media screen and (max-width: 576px) {
     body {
         background-color: greenyellow;
     }

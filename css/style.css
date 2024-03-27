@@ -1,0 +1,38 @@
+/************* IMPOSTAZIONI GENERALI *************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/************* DEBUG *************/
+
+/************* IMPOSTAZIONI SPECIFICHE *************/
+
+/************* HEADER *************/
+
+/************* MAIN *************/
+
+/************* FOOTER *************/
+
+/************* MEDIA QUERY SCHERMO *************/
+/************* DESKTOP *************/
+@media screen and (max-width: ) {
+    body {
+        background-color: red;
+    }
+}
+/************* TABLET *************/
+@media screen and (max-width: ) {
+    body {
+        background-color: orange;
+    }
+}
+/************* SMARTPHONE *************/
+@media screen and (max-width: ) {
+    body {
+        background-color: greenyellow;
+    }
+}

@@ -9,41 +9,56 @@
 
 :root {
     --ColorTopBar: rgba(8,11,18,255);
-    --ColorNavBar: rgba(0,0,0,255);
+    /* --ColorNavBar: rgba(0,0,0,255); */
+    --ColorNavBar: pink;
     --ColorMain: rgba(20,25,34,255);
-    --ColorEndBar: rgba(40,40,40,255)
+    --ColorEndBar: rgba(40,40,40,255);
+    --ColorLink: rgba(121,121,121,255);
 }
 
 .grid {
-    max-width: 1400px;
+    max-width: 2000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 12rem calc(100% - 12rem);
     grid-template-rows: 5rem calc(100vh - 10rem) 5rem;
- }
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 #nav-bar {
     grid-row: 1/3;
     background-color: var(--ColorNavBar);
+    padding: 1rem 1rem 0 1rem;
+
 }
 
 #upgrade {
     background-color: var(--ColorTopBar);
 }
 
-#list {
+#list-music {
     background-color: var(--ColorMain);
     overflow: scroll;
     overflow-x: hidden;
 }
 
-#list::-webkit-scrollbar {
+#list-music::-webkit-scrollbar {
     display: none;
-  }
+}
 
 #music-bar {
     grid-column: 1/3;
     background-color: var(--ColorEndBar);
+}
+
+a {
+    text-decoration: none;
+    color: var(--ColorLink);
 }
 
 /************* DEBUG *************/
@@ -51,12 +66,45 @@
     gap: 1rem;
 }
 /************* IMPOSTAZIONI SPECIFICHE *************/
+/************* NAV-BAR *************/
 
-/************* HEADER *************/
+#logo {
+    width: 100%;
+    height: 3rem;
+    background-color: lightblue;
+}
 
-/************* MAIN *************/
+#nav-bar .fa-solid {
+    margin-right: 0.5rem;
+    color: white;
+}
 
-/************* FOOTER *************/
+.link,
+#personal-playlist {
+    margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+ol {
+    list-style-type: none;
+    display: none;
+}
+
+#personal-playlist:hover ol {
+    display: block;
+}
+
+.lower-nav-bar a:first-child {
+    border-bottom: 1px solid var(--ColorLink);
+    font-size: 0.8rem;
+}
+
+/************* UPGRADE *************/
+
+
+
+/************* LIST *************/
+
+/************* MUSIC-BAR *************/
 
 /************* MEDIA QUERY DESKTOP-FIRST *************/
 /************* md SCREEN *************/
@@ -76,4 +124,52 @@
     body {
         background-color: greenyellow;
     }
+
+    .grid {
+        min-width: 200px;
+        display: grid;
+        grid-template-columns: 2.5rem calc(100% - 2.5rem);
+        grid-template-rows: 5rem calc(100vh - 10rem) 5rem;
+    }
+
+/************* NAV-BAR *************/
+    #nav-bar {
+        padding: unset;
+    }
+    a {
+        display: none;
+    }
+    .link {
+        font-size: 1.5rem;
+    }
+}
+
+
+/************* CLASSI ATOMICHE PADDING-MARGIN *************/
+
+.pd1rem {
+    padding: 1rem;
+}
+.pdb05rem {
+    padding-bottom: 0.5rem;
+}
+
+
+.pd2rem {
+    padding: 2rem;
+}
+
+.mrg1rem {
+    margin: 1rem;
+}
+.mrgb1rem {
+    margin-bottom: 1rem;
+}
+
+
+.mrg2rem {
+    margin: 2rem;
+}
+.mrgb2rem {
+    margin-bottom: 2rem;
 }

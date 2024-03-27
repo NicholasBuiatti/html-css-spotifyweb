@@ -7,8 +7,49 @@
     padding: 0;
 }
 
-/************* DEBUG *************/
+:root {
+    --ColorTopBar: rgba(8,11,18,255);
+    --ColorNavBar: rgba(0,0,0,255);
+    --ColorMain: rgba(20,25,34,255);
+    --ColorEndBar: rgba(40,40,40,255)
+}
 
+.grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 5rem calc(100vh - 10rem) 5rem;
+ }
+
+#nav-bar {
+    grid-row: 1/3;
+    background-color: var(--ColorNavBar);
+}
+
+#upgrade {
+    background-color: var(--ColorTopBar);
+}
+
+#list {
+    background-color: var(--ColorMain);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#list::-webkit-scrollbar {
+    display: none;
+  }
+
+#music-bar {
+    grid-column: 1/3;
+    background-color: var(--ColorEndBar);
+}
+
+/************* DEBUG *************/
+.grid {
+    gap: 1rem;
+}
 /************* IMPOSTAZIONI SPECIFICHE *************/
 
 /************* HEADER *************/

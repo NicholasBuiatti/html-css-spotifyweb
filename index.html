@@ -10,22 +10,26 @@
 <body>
     <!-- DISPLAY-GRID WEB-APP-->
     <div class="grid">
-        <div class="flex" id="nav-bar">
+        <div class="flex flex-column" id="nav-bar">
             <div class="upper-nav-bar">   
-                <figure class="mrgb1rem" id="logo">
-                
+                <figure class="mrgb1rem">
+                    <img src="./img/logo.svg" alt="Logo Spotify" id="logo">
+                    <img src="./img/logo-small.svg" alt="Logo Spotify Small" id="logo-small">
                 </figure>
                 <div class="link">
-                    <i class="fa-solid fa-house"></i><a href="#">Home</a>
+                    <img src="./img/home.svg" alt="logo Home">
+                    <a href="#">Home</a>
                 </div>
                 <div class="link">
-                    <i class="fa-solid fa-magnifying-glass"></i><a href="#">Cerca</a>
+                    <img src="./img/search.svg" alt="logo Search">
+                    <a href="#">Cerca</a>
                 </div>
                 <div class="link">
-                    <i class="fa-solid fa-book"></i><a href="#" class="mrgb1rem">La tua libreria</a>
+                    <img src="./img/libreria.svg" alt="logo Library">
+                    <a href="#">La tua libreria</a>
                 </div>
                 <div id="personal-playlist">
-                    <a href="#">PLAYLIST</a>
+                    <a href="#" class="block">PLAYLIST</a>
                     <ol>
                         <li><i class="fa-solid fa-square-plus"></i><a href="#">Crea Playlist</a></li>
                         <li><a href="#">Nome Playlist</a></li>
@@ -36,19 +40,37 @@
             </div>
             <div class="lower-nav-bar">
                 <div class="link">
+                    <img src="./img/download.svg" alt="logo Download">
                     <a href="#" class="pdb05rem">Installa App</a>
                 </div>
-                <div class="link">
-                    <a href="#">Jane Doe</a>
+                <hr>
+                <div class="link mrg05rem">
+                    <img src="./img/profile.svg" alt="logo Profile">
+                    <a href="#" id="user-name">Jane Doe</a>
                 </div>
             </div> 
         </div>
         
-        <div id="upgrade">ciao</div>
+        <div id="upgrade">
+            <a href="#" class="block font-gray" id="btn-upgrade">EFFETTUA L'UPGRADE</a>
+        </div>
         
         <div id="list-music"></div>
         
-        <div id="music-bar">ciao</div>
+        <div class="flex" id="music-bar">
+            <div class="flex music-bar-left">
+                <figure>
+                    <img src="./img/sinister.jpeg" alt="img Sinister">
+                </figure>
+                <p class="mrgr1rem font-white">Sinister <br> <span class="font-gray">brano nome</span></p>
+                <div class="btn-box">
+                    <button class="mrgr05rem"><i class="fa-regular fa-heart"></i></button>
+                    <button><i class="fa-regular fa-folder"></i></button>
+                </div>
+            </div>
+            <div class="music-bar-center">2</div>
+            <div class="music-bar-right">3</div>
+        </div>
     </div>
     
 </body>

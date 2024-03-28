@@ -10,7 +10,7 @@
 <body>
     <!-- DISPLAY-GRID WEB-APP-->
     <div class="grid">
-        <div class="flex flex-column" id="nav-bar">
+        <nav class="flex flex-column" id="nav-bar">
             <div class="upper-nav-bar">   
                 <figure class="mrgb1rem">
                     <img src="./img/logo.svg" alt="Logo Spotify" id="logo">
@@ -40,22 +40,39 @@
             </div>
             <div class="lower-nav-bar">
                 <div class="link">
-                    <img src="./img/download.svg" alt="logo Download">
-                    <a href="#" class="pdb05rem">Installa App</a>
+                    <img src="./img/download.svg" alt="logo Download" id="download-logo">
+                    <a href="#" class="">Installa App</a>
                 </div>
                 <hr>
-                <div class="link mrg05rem">
-                    <img src="./img/profile.svg" alt="logo Profile">
+                <div class="link user">
+                    <img src="./img/profile.svg" alt="logo Profile" id="photo-user">
                     <a href="#" id="user-name">Jane Doe</a>
                 </div>
             </div> 
-        </div>
+        </nav>
         
         <div id="upgrade">
             <a href="#" class="block font-gray" id="btn-upgrade">EFFETTUA L'UPGRADE</a>
         </div>
         
-        <div id="list-music"></div>
+        <main id="list-music">
+            <section class="flex menu">
+                <a href="#" class="block">IN EVIDENZA</a>
+                <a href="#" class="block">PODCAST</a>
+                <a href="#" class="block">CLASSIFICHE</a>
+                <a href="#" class="block">GENERI E MOOD</a>
+                <a href="#" class="block">NUOVE USCITE</a>
+                <a href="#" class="block">SCOPRI</a>
+            </section>
+            <section class="flex recently-played">
+                
+            </section>
+            <section class="flex music-for-user">seconda riga</section>
+            <section class="flex popular-artists">terza riga</section>
+            <section class="flex new-music">quarta riga</section>
+            <section class="flex hiphop-music">quinta riga</section>
+            <section class="flex hiphop-music">quinta riga</section>
+        </main>
         
         <div class="flex" id="music-bar">
             <div class="flex music-bar-left">

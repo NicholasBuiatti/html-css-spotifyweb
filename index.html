@@ -17,15 +17,15 @@
                     <img src="./img/logo-small.svg" alt="Logo Spotify Small" id="logo-small">
                 </figure>
                 <div class="link">
-                    <img src="./img/home.svg" alt="logo Home">
+                    <a href="#"><img src="./img/home.svg" alt="logo Home"></a>
                     <a href="#">Home</a>
                 </div>
                 <div class="link">
-                    <img src="./img/search.svg" alt="logo Search">
+                    <a href="#"><img src="./img/search.svg" alt="logo Search"></a>
                     <a href="#">Cerca</a>
                 </div>
                 <div class="link">
-                    <img src="./img/libreria.svg" alt="logo Library">
+                    <a href="#"><img src="./img/libreria.svg" alt="logo Library"></a>
                     <a href="#">La tua libreria</a>
                 </div>
                 <div id="personal-playlist">
@@ -40,12 +40,12 @@
             </div>
             <div class="lower-nav-bar">
                 <div class="link">
-                    <img src="./img/download.svg" alt="logo Download" id="download-logo">
-                    <a href="#" class="">Installa App</a>
+                    <a href="#"><img src="./img/download.svg" alt="logo Download" id="download-logo"></a>
+                    <a href="#">Installa App</a>
                 </div>
                 <hr>
                 <div class="link user">
-                    <img src="./img/profile.svg" alt="logo Profile" id="photo-user">
+                    <a href="#"><img src="./img/profile.svg" alt="logo Profile" id="photo-user"></a>
                     <a href="#" id="user-name">Jane Doe</a>
                 </div>
             </div> 
@@ -160,9 +160,29 @@
                     <button><i class="fa-regular fa-folder"></i></button>
                 </div>
             </div>
-            <div class="music-bar-center">2</div>
+            <div class="music-bar-center">
+                <div class="music-bar-center-up">
+                    <button><i class="fa-solid fa-shuffle"></i></button>
+                    <button><i class="fa-solid fa-forward-step"></i></button>
+                    <button><i class="fa-regular fa-circle-play"></i></button>
+                    <button><i class="fa-solid fa-forward-step"></i></button>
+                    <button><i class="fa-solid fa-rotate-right"></i></button>
+                </div>
+                <div class="flex music-bar-center-down">
+                    <p>1.32</p>
+                    <div id="music-run">
+                        <div class="volume-size"></div>
+                    </div>
+                    <p>4.38</p>
+                </div>
+            </div>
             <div class="music-bar-right">
-                
+                <button class="mrgr05rem"><i class="fa-solid fa-list"></i></button>
+                <button class="mrgr05rem"><i class="fa-solid fa-display"></i></button>
+                <button class="mrgr05rem"><i class="fa-solid fa-volume-high"></i></button>
+                <div id="volume">
+                    <div class="volume-size"></div>
+                </div>
             </div>
         </div>
     </div>

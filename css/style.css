@@ -42,7 +42,7 @@
 
 #upgrade {
     background-color: var(--ColorTopBar);
-    position: relative;
+    /* position: relative; */
 }
 
 #list-music {
@@ -67,9 +67,6 @@ a {
 }
 
 /************* DEBUG *************/
-.grid {
-    gap: 1rem;
-}
 /************* IMPOSTAZIONI SPECIFICHE *************/
 /************* NAV-BAR *************/
 
@@ -91,13 +88,18 @@ a {
 #personal-playlist {
     margin: 0 0.5rem 0.5rem 0;
     padding-left: 1rem;
-    border-left: 3px solid orange;
     display: flex;
     align-items: center;
 }
 
 #personal-playlist {
     display: block;
+}
+
+.fa-square-plus {
+    color: white;
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
 }
 
 ol {
@@ -157,13 +159,64 @@ hr {
 #btn-upgrade {
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     position: absolute;
-    top: 50%;
+    top: 2rem;
     right: 1rem;
     transform: translateY(-50%);
     border: 1px solid white;
     border-radius: 25px;
     font-size: 0.8rem;
 }
+
+#credentials {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    padding: 30vh 20%;
+    background-color: rgba(0,0,0,0.8);
+}
+  
+#credentials:target {
+display: block;
+}
+
+.credentials-header {
+    background-color: yellowgreen;
+    padding: 0 1rem;
+}
+
+.credentials-header > h1 {
+    display: inline-block;
+}
+
+.credentials-main {
+    background-color: green;
+    height: 40vh;
+    padding: 1rem;
+}
+
+.credentials-main > img {
+    padding: 1rem;
+}
+
+.closebtn {
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+}
+  
+.closebtn:hover,
+.closebtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 /************* LIST-MUSIC *************/
 
@@ -205,10 +258,36 @@ hr {
     margin-bottom: 1rem;
     width: 100%;
     aspect-ratio: 1;
+    position: relative;
 }
 
 .photo-music > img {
     width: 100%;
+}
+
+.photo-music > a {
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+}
+
+.photo-music .fa-circle-play {
+    font-size: 100%;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+}
+
+.round > a {
+    border-radius: 50%;
 }
 
 .song > h4 {
@@ -257,7 +336,6 @@ hr {
 }
 
 #music-bar button {
-    display: inline-block;
     background-color: transparent;
     border: none;
 }
@@ -273,13 +351,18 @@ hr {
     margin: 0 0.5rem;
 }
 
-.fa-circle-play {
+.play > .fa-circle-play {
     font-size: 1.3rem;
 }
 
 .music-bar-center-down {
     align-items: center;
     justify-content: center;
+}
+
+.back-track {
+    transform: scale(-1);
+    
 }
 
 .music-bar-center-down > p {
@@ -294,6 +377,12 @@ hr {
     margin: 1rem 2rem;
     display: inline-block;
 }
+.volume-size {
+    height: 0.2rem;
+    background-color: white;
+    width: 70%;
+    border-radius: 25px;
+}
 
 .music-bar-right > button  {
     color: white;
@@ -301,7 +390,7 @@ hr {
 
 }
 
-#volume {
+#vol {
     display: inline-block;
     background-color: grey;
     height: 0.2rem;
@@ -309,12 +398,7 @@ hr {
     border-radius: 25px;
 }
 
-.volume-size {
-    height: 0.2rem;
-    background-color: white;
-    width: 70%;
-    border-radius: 25px;
-}
+
 
 /************* MEDIA QUERY DESKTOP-FIRST *************/
 /************* md SCREEN *************/
@@ -416,17 +500,55 @@ hr {
         font-size: 0.7rem;
     }
 
+    .music-bar-left,
+    .music-bar-right > button {
+        display: none;
+    }
 
-
+    .music-bar-center {
+        min-width: 60%;
+    }
+    .music-bar-right {
+        min-width: 30%;
+    }
 }
 
 
 /************* ANIMAZIONI *************/
 
-
+/************* NAV-BAR *************/
 #personal-playlist:hover ol {
     display: block;
 }
+
+.upper-nav-bar > .link:hover {
+    border-left: 3px solid orange;
+}
+
+a:hover {
+    color: white;
+}
+
+/************* MUSIC-LIST *************/
+
+a:hover .border-selector {
+    background-color: orange;
+    height: 2px;
+    width: 2rem;
+    margin: 0.3rem auto;
+}
+
+.photo-music:hover a {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+/************* MUSIC-BAR *************/
+
+
+
+
 
 /************* CLASSI ATOMICHE PADDING-MARGIN-DISPLAY *************/
 

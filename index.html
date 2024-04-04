@@ -51,18 +51,41 @@
             </div> 
         </nav>
         
-        <div id="upgrade">
-            <a href="#" class="block font-gray" id="btn-upgrade">EFFETTUA L'UPGRADE</a>
+        <div id="upgrade" class="tab">
+            <a href="#credentials" class="block font-gray" id="btn-upgrade">EFFETTUA L'UPGRADE</a>
+            <div id="credentials">
+                <header class="credentials-header flex">
+                    <h1>Grazie per aver scelto Spotify!!</h1>
+                    <a href="#" class="closebtn">×</a>
+                </header>
+                <main class="credentials-main">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatum repellendus rem consequuntur nihil a animi mollitia aut ducimus optio necessitatibus inventore quibusdam quidem officiis expedita officia repudiandae molestias magnam!</p>
+                    <img src="./img/logo.svg" alt="">
+                </main>
+                
+            </div>
         </div>
         
         <main id="list-music">
             <section class="flex menu">
-                <a href="#" class="block">IN EVIDENZA</a>
-                <a href="#" class="block">PODCAST</a>
-                <a href="#" class="block">CLASSIFICHE</a>
-                <a href="#" class="block">GENERI E MOOD</a>
-                <a href="#" class="block">NUOVE USCITE</a>
-                <a href="#" class="block">SCOPRI</a>
+                <a href="#" class="block">IN EVIDENZA
+                    <div class="border-selector"></div>
+                </a>
+                <a href="#" class="block">PODCAST
+                    <div class="border-selector"></div>
+                </a>
+                <a href="#" class="block">CLASSIFICHE
+                    <div class="border-selector"></div>
+                </a>
+                <a href="#" class="block">GENERI E MOOD
+                    <div class="border-selector"></div>
+                </a>
+                <a href="#" class="block">NUOVE USCITE
+                    <div class="border-selector"></div>
+                </a>
+                <a href="#" class="block">SCOPRI
+                    <div class="border-selector"></div>
+                </a>
             </section>
             <section class="recently-played">
                 <h1 class="title mrg05rem">Recently played</h1>
@@ -70,41 +93,47 @@
                     <div class="song mrg05rem">
                         <figure class="photo-music">
                             <img src="./img/metal_lifting.jpg" alt="">
+                            <a href="#"><i class="fa-regular fa-circle-play"></i></a>
                         </figure>
                         <h4>Heavy Metal</h4>
                         <p>Subtitle</p>
                     </div>
                     <div class="song mrg05rem">
                         <figure class="photo-music">
-
+                            <img src="./img/aquietplace.jpeg" alt="">
+                            <a href="#"><i class="fa-regular fa-circle-play"></i></a>
                         </figure>
                         <h4>Heavy Metal</h4>
                         <p>Subtitle</p>
                     </div>
                     <div class="song mrg05rem">
                         <figure class="photo-music">
-
+                            <img src="./img/stranger.jpeg" alt="">
+                            <a href="#"><i class="fa-regular fa-circle-play"></i></a>
                         </figure>
                         <h4>Heavy Metal</h4>
                         <p>Subtitle</p>
                     </div>
                     <div class="song mrg05rem">
                         <figure class="photo-music">
-
+                            <img src="./img/split.jpeg" alt="">
+                            <a href="#"><i class="fa-regular fa-circle-play"></i></a>
                         </figure>
                         <h4>Heavy Metal</h4>
                         <p>Subtitle</p>
                     </div>
                     <div class="song mrg05rem">
                         <figure class="photo-music">
-
+                            <img src="./img/sinister.jpeg" alt="">
+                            <a href="#"><i class="fa-regular fa-circle-play"></i></a>
                         </figure>
                         <h4>Heavy Metal</h4>
                         <p>Subtitle</p>
                     </div>
                     <div class="song mrg05rem">
                         <figure class="photo-music">
-
+                            <img src="./img/radar.jpeg" alt="">
+                            <a href="#"><i class="fa-regular fa-circle-play"></i></a>
                         </figure>
                         <h4>Heavy Metal</h4>
                         <p>Subtitle</p>
@@ -118,12 +147,14 @@
                     <div class="song mrg05rem">
                         <figure class="photo-music">
                             <img src="./img/metal_lifting.jpg" alt="">
+                            <a href="#"><i class="fa-regular fa-circle-play"></i></a>
                         </figure>
                         <h4>Realase radar</h4>
                     </div>
                     <div class="song mrg05rem">
                         <figure class="photo-music">
-
+                            <img src="./img/radar.jpeg" alt="">
+                            <a href="#"><i class="fa-regular fa-circle-play"></i></a>
                         </figure>
                         <h4>Dealy mix</h4>
                     </div>
@@ -136,12 +167,14 @@
                     <div class="song mrg05rem">
                         <figure class="photo-music round">
                             <img src="./img/einaudi.jpeg" alt="">
+                            <a href="#"><i class="fa-regular fa-circle-play"></i></a>
                         </figure>
                         <h4>Einaudi</h4>
                     </div>
                     <div class="song mrg05rem">
                         <figure class="photo-music round">
                             <img src="./img/youg.jpeg" alt="">
+                            <a href="#"><i class="fa-regular fa-circle-play"></i></a>
                         </figure>
                         <h4>Youg</h4>
                     </div>
@@ -163,8 +196,8 @@
             <div class="music-bar-center">
                 <div class="music-bar-center-up">
                     <button><i class="fa-solid fa-shuffle"></i></button>
-                    <button><i class="fa-solid fa-forward-step"></i></button>
-                    <button><i class="fa-regular fa-circle-play"></i></button>
+                    <button><i class="fa-solid fa-forward-step back-track"></i></button>
+                    <button class="play"><i class="fa-regular fa-circle-play"></i></button>
                     <button><i class="fa-solid fa-forward-step"></i></button>
                     <button><i class="fa-solid fa-rotate-right"></i></button>
                 </div>
@@ -180,9 +213,7 @@
                 <button class="mrgr05rem"><i class="fa-solid fa-list"></i></button>
                 <button class="mrgr05rem"><i class="fa-solid fa-display"></i></button>
                 <button class="mrgr05rem"><i class="fa-solid fa-volume-high"></i></button>
-                <div id="volume">
-                    <div class="volume-size"></div>
-                </div>
+                <input type="range" id="vol" name="vol" min="0" max="50">
             </div>
         </div>
     </div>

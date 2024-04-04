@@ -199,7 +199,9 @@ display: block;
     padding: 1rem;
 }
 
-.credentials-main > img {
+.logo-upgrade {
+    margin: 0 auto;
+    width: 50%;
     padding: 1rem;
 }
 
